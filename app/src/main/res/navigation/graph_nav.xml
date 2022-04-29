@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/graph_nav"
+    app:startDestination="@id/PostesFragment">
+
+    <fragment
+        android:id="@+id/azkarFragment"
+        android:name="com.el3asas.eduapp.ui.AzkarFragment"
+        android:label="fragment_azkar"
+        tools:layout="@layout/fragment_azkar">
+        <action
+            android:id="@+id/action_azkarFragment_to_listedAzkarFragment"
+            app:destination="@id/listedAzkarFragment" />
+        <argument
+            android:name="azkarList"
+            app:argType="com.el3asas.eduapp.models.AzkarEntity[]"
+            app:nullable="true" />
+        <argument
+            android:name="pos"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="MainCategoryName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/PostesFragment"
+        android:name="com.el3asas.eduapp.ui.PostsFragment"
+        android:label="fragment_postes"
+        tools:layout="@layout/fragment_postes">
+        <action
+            android:id="@+id/action_PostesFragment_to_previousPostFragment"
+            app:destination="@id/previousPostFragment" />
+        <action
+            android:id="@+id/action_PostesFragment_to_prayTimes"
+            app:destination="@id/prayTimes" />
+        <action
+            android:id="@+id/action_PostesFragment_to_mainAzkarrFragment"
+            app:destination="@id/mainAzkarrFragment" />
+        <action
+            android:id="@+id/action_PostesFragment_to_islamicCalenderFragment"
+            app:destination="@id/islamicCalenderFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/previousPostFragment"
+        android:name="com.el3asas.eduapp.ui.PreviousPostActivity"
+        android:label="previousPostFragment" />
+    <dialog
+        android:id="@+id/prayTimes"
+        android:name="com.el3asas.eduapp.ui.BottomSheetPrayTimes"
+        android:label="PrayTimes" />
+    <dialog
+        android:id="@+id/mainAzkarrFragment"
+        android:name="com.el3asas.eduapp.ui.MainAzkarrFragment"
+        android:label="fragment_main_azkarr_list"
+        tools:layout="@layout/fragment_main_azkarr_list">
+        <action
+            android:id="@+id/action_mainAzkarrFragment_to_listedAzkarFragment"
+            app:destination="@id/listedAzkarFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/listedAzkarFragment"
+        android:name="com.el3asas.eduapp.ui.ListedAzkarFragment"
+        android:label="fragment_listed_azkar_list"
+        tools:layout="@layout/fragment_listed_azkar_list">
+        <action
+            android:id="@+id/action_listedAzkarFragment_to_azkarFragment"
+            app:destination="@id/azkarFragment" />
+        <action
+            android:id="@+id/action_listedAzkarFragment_to_mainAzkarrFragment"
+            app:destination="@id/mainAzkarrFragment" />
+        <argument
+            android:name="categoryTitle"
+            app:argType="string"
+            android:defaultValue='""' />
+        <action
+            android:id="@+id/action_listedAzkarFragment_to_PostesFragment"
+            app:destination="@id/PostesFragment" />
+        <argument
+            android:name="categoriesName"
+            app:argType="string[]" />
+    </fragment>
+    <dialog
+        android:id="@+id/islamicCalenderFragment"
+        android:name="com.el3asas.eduapp.ui.IslamicCalenderFragment"
+        android:label="fragment_islamic_calender"
+        tools:layout="@layout/fragment_islamic_calender" />
+</navigation>

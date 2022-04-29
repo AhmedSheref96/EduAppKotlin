@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "125827990610",
+    "firebase_url": "https://firetest-3e160.firebaseio.com",
+    "project_id": "firetest-3e160",
+    "storage_bucket": "firetest-3e160.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125827990610:android:376c5226b67e71a6db8b8b",
+        "android_client_info": {
+          "package_name": "com.el3asas.eduapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125827990610-jb524qhh15i9o4coqjo7pkk0c7nivh3l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.el3asas.eduapp",
+            "certificate_hash": "510fbd6d270b0476b6f8c438d90fb5657a2d5605"
+          }
+        },
+        {
+          "client_id": "125827990610-9e2sjkirm8e7bitf1ntqd4qu8fggjgst.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFpDlnkdVOGq-kqnzO6x_vSVp3BAOeamA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125827990610-9e2sjkirm8e7bitf1ntqd4qu8fggjgst.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

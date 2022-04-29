@@ -1,0 +1,51 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.EduApp" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#555</item>
+        <item name="colorPrimaryVariant">#555</item>
+        <item name="colorOnPrimary">#555</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#555</item>
+        <item name="colorSecondaryVariant">#555</item>
+        <item name="colorOnSecondary">#555</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+        <item name="android:windowBackground">@drawable/splash_img</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.EduApp">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AdAttribution" parent="Theme.EduApp">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:background">#ffcc66</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/ad_attribution</item>
+        <item name="android:height">15dp</item>
+        <item name="android:width">15dp</item>
+    </style>
+
+    <style name="textStyle">
+        <item name="fontFamily">@font/defult</item>
+        <item name="android:textColor">@color/text</item>
+    </style>
+
+    <style name="Theme.EduApp.Fullscreen" parent="Theme.EduApp">
+        <item name="android:actionBarStyle">@style/Widget.Theme.EduApp.ActionBar.Fullscreen</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="ThemeOverlay.EduApp.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/light_blue_600</item>
+        <item name="fullscreenTextColor">@color/light_blue_A200</item>
+    </style>
+</resources>

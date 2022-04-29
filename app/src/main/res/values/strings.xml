@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ad_attribution">Ad</string>
+    <string name="adg">ca-app-pub-7153023443357646/6616448468</string>
+    <string name="app_name">تــــزود</string>
+    <string name="aqtbas">اقتباسات</string>
+    <string name="ayat">ايات قرءانيه</string>
+    <string name="daily_posts">اليوميه</string>
+    <string name="hades">احاديث</string>
+    <string name="panner2">ca-app-pub-7153023443357646/2757094505</string>
+    <string name="privous">الســابق</string>
+    <string name="iconTitle">icon</string>
+    <string name="img">img</string>
+    <string name="prayTimes">صلواتك</string>
+    <string name="prayTims">مواقيت الصلاه</string>
+    <string name="fajr">صلاه الفجر</string>
+    <string name="zohr">صلاه الظهر</string>
+    <string name="assr">صلاه العصر</string>
+    <string name="maaghreb">صلاه المغرب</string>
+    <string name="asha">صلاه العشاء</string>
+    <string name="shruq">صلاه الشروق</string>
+    <string name="creatAlarm">انشاء تنبيه</string>
+    <string name="alarmNametitle">اسم التنبيه</string>
+    <string name="enterAlarmName">ادخل اسم للتنبيه</string>
+    <string name="next">التالى</string>
+    <string name="simpole">:</string>
+    <string name="aleartAboutAlarmName">تأكد من صحه اسم التنبيه</string>
+    <string name="title_activity_alarm_wakeup">AlarmWakeupActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="location_updated">location updated</string>
+    <string name="launch_activity">get Location Started</string>
+    <string name="remove_location_updates">cancel location updated</string>
+    <string name="title_activity_wake_alarm">WakeAlarmActivity</string>
+    <string name="cancel_media_player">ايقاف الاذان</string>
+    <string name="action_settings">Settings</string>
+    <string name="interstitial_ad_sample">Interstitial Ad Sample</string>
+    <string name="start_level">Level 1</string>
+    <string name="next_level">Next Level</string>
+    <string name="level_text">Level %1$d</string>
+    <!-- -
+    This is an ad unit ID for an interstitial test ad. Replace with your own interstitial ad unit id.
+    For more information, see https://support.google.com/admob/answer/3052638
+<!- -->
+    <string name="interstitial_ad_unit_id">YOUR_INTERSTITIAL_AD_UNIT_ID</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="azkarT">اذكار وادعيه</string>
+    <string name="favorites">favorites</string>
+    <string name="islamicCalender">التقويم الهجرى</string>
+</resources>

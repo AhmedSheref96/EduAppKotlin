@@ -1,0 +1,15 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:width="35dp"
+    android:height="35dp"
+    android:autoMirrored="true"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    tools:ignore="VectorRaster">
+    <path
+        android:fillAlpha="0.54"
+        android:fillColor="@color/back_cl"
+        android:fillType="evenOdd"
+        android:pathData="M15.4,7.4 L14,6 8,12l6,6 1.4,-1.4L10.8,12Z"
+        android:strokeAlpha="0.54" />
+</vector>

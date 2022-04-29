@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutDirection="ltr"
+            android:background="@color/allBG"
+            >
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/search_bg"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:imeOptions="actionDone"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                app:iconifiedByDefault="false"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/layout"
+                android:layout_below="@id/searchView"
+                >
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="25dp"
+                    android:paddingHorizontal="25dp"
+                    android:clipToPadding="false"
+                    >
+                    <View
+                        android:id="@+id/indicator"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/gradient_bg"
+                        />
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/tab_bg"
+                        app:tabGravity="fill"
+                        app:tabMode="fixed"
+                        app:tabSelectedTextColor="#ffffff"
+                        app:tabIndicatorColor="@null"
+                        app:tabRippleColor="@null"
+                        app:tabTextColor="@color/tabtext"
+                        style="@style/textStyle"
+                        />
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/layout"
+                android:layout_marginTop="12dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </RelativeLayout>
+</layout>
